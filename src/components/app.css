@@ -1,0 +1,15 @@
+@import '~antd/dist/antd.css';
+
+.site-layout-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+
+.contentWrap {
+    padding: 0 50px;
+}
+
+.menu {
+    line-height: 64px;
+}
