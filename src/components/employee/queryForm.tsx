@@ -3,6 +3,8 @@ import {Form, Input, Select, Button} from 'antd'
 
 
 import {EmployeeRequest} from '../../interface/employee'
+import { get } from '../../utils/request'
+import { GET_EMPLOYEE_URL } from '../../constants/urls'
 
 const {Option} = Select;
 class QueryFrom extends Component<{},EmployeeRequest>{
@@ -29,6 +31,9 @@ class QueryFrom extends Component<{},EmployeeRequest>{
     }
     queryEmployee(param:EmployeeRequest){
         console.log(param)
+        get(GET_EMPLOYEE_URL,param).then( response =>{
+
+        })
     }
 
     
